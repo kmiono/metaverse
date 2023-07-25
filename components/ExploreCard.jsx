@@ -13,7 +13,9 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     } flex items-center justify-center min-w-[170px]
   h-[700px] transition-[flex] duration-[0.7s]
   ease-out-flex cursor-pointer`}
-    onClick={() => handleClick(id)}>
+    onClick={() => handleClick(id)}
+    // eslint-disable-next-line react/jsx-closing-bracket-location
+  >
     <img
       src={imgUrl}
       alt={title}
@@ -24,16 +26,22 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
       <h3
         className="font-semibold sm:text-[26px]
       text-[18px] text-white absolute z-0
-      lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
+      lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]"
+        // eslint-disable-next-line react/jsx-closing-bracket-location
+      >
         {title}
       </h3>
     ) : (
       <div
         className="absolute bottom-0 p-8 justify-start
-      w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
+      w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]"
+        // eslint-disable-next-line react/jsx-closing-bracket-location
+      >
         <div
           className={`${styles.flexCenter} w-[60px]
-        h-[60px] rounded-[24px] glassmorphism mb-[16px]`}>
+        h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
+          // eslint-disable-next-line react/jsx-closing-bracket-location
+        >
           <img
             src="/headset.svg"
             alt="headset"
@@ -42,12 +50,16 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         </div>
         <p
           className="font-normal text-[16px] leading-[20px]
-        text-white uppercase">
+        text-white uppercase"
+          // eslint-disable-next-line react/jsx-closing-bracket-location
+        >
           Enter the Metaverse
         </p>
         <h2
           className="mt-[24px] font-semibold sm:text-[24px]
-        text-white">
+        text-white"
+          // eslint-disable-next-line react/jsx-closing-bracket-location
+        >
           {title}
         </h2>
       </div>

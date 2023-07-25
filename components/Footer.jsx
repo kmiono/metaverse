@@ -11,7 +11,9 @@ const Footer = () => (
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.paddings} py-8 relative`}>
+    className={`${styles.paddings} py-8 relative`}
+    // eslint-disable-next-line react/jsx-closing-bracket-location
+  >
     <div className="footer-gradient" />
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
       <div className="flex items-center justify-between fle-wrap gap-5">
@@ -20,7 +22,9 @@ const Footer = () => (
         </h4>
         <button
           type="button"
-          className="flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]">
+          className="flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]"
+          // eslint-disable-next-line react/jsx-closing-bracket-location
+        >
           <img
             src="/headset.svg"
             alt="headset"
